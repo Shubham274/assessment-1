@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.top_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  box-shadow: 0 2px 4px #ccc;
+}
+
+.logo_wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 36px;
+}
+
+.logo_wrapper img {
+  width: 24px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+.brand_name {
+  font-size: 24px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.login_form {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 6px #ccc;
+}
+
+.login_form h1 {
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 0 0 24px;
+}
+
+.login_input {
+  width: 100%;
+  padding-top: 16px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 2px solid #8c8c8c;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+.active {
+  color: #20b883;
+  border-bottom: 3px solid #20b883;
+}
+
+.login_btn {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #20b883;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.left_menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu_item {
+  padding: 24px 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  margin: 0 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.app_container {
+  padding-top: 2rem;
+  background-color: #f6f7fb;
+  height: 100vw;
+}
+
+.page_wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 8% 4%;
+}
+
+.orders_wrapper {
+  width: 100%;
+  display: flex;
+  padding: 24px 0;
+}
+
+.filter_div {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter_div h3,
+p {
+  margin-bottom: 20px;
+}
+
+.filter_checkbox {
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.filter_checkbox input {
+  margin-right: 12px;
+}
+.order-table-wrapper {
+  width: 100%;
+}
+.order_table {
+  width: 100%;
+}
+
+.table-header,
+.table-data {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.table-header div,
+.table-data div {
+  flex: 1;
+}
+
+.table-header h4 {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.table-data div {
+  background-color: #fff;
+  border-bottom: 4px solid #f6f7fb;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.id,
+.amount,
+.date span,
+.stock,
+.med_brand,
+.fullName,
+.gender,
+.location {
+  color: #8c8c8c;
+}
+
+.filter_wrapper {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  margin-top: 23px;
+  margin-bottom: 48px;
+}
+
+.search_box {
+  width: calc(100% - 100px);
+  padding: 12px 24px;
+  font-size: 15px;
+  border: 0;
+  border-bottom: 2px solid #8c8c8c;
+  margin: 0 36px 0 0;
+  outline: none;
+}
+
+.reset_btn {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #20b883;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.remove {
+  display: none;
+}
+
+.remove2 {
+  display: none;
+}

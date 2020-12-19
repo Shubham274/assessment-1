@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="top_bar">
+      <div class="left_menu">
+        <div class="logo_wrapper">
+          <img
+            src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            alt="logo"
+          />
+          <p class="brand_name">Kafene</p>
+        </div>
+        <nav>
+          <a class="menu_item">Orders</a>
+          <a class="menu_item">Products</a>
+          <a class="menu_item">Users</a>
+        </nav>
+      </div>
+      <a class="menu_item" style="visibility: hidden">Logout</a>
+    </header>
+
+    <main class="app_container">
+      <div>
+        <form class="login_form">
+          <h1>Sign In</h1>
+          <input
+            class="login_input"
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+          />
+          <input
+            class="login_input"
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+          />
+          <input type="submit" value="Login" class="login_btn" />
+        </form>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+    <script src="./allData.js"></script>
+  </body>
+</html>

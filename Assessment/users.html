@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Users</title>
+  </head>
+  <body>
+    <header class="top_bar">
+      <div class="left_menu">
+        <div class="logo_wrapper">
+          <img
+            src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            alt="logo"
+          />
+          <p class="brand_name">Kafene</p>
+        </div>
+        <nav>
+          <a class="menu_item" href="./orders.html">Orders</a>
+          <a class="menu_item" href="./products.html">Products</a>
+          <a class="menu_item active" href="./users.html">Users</a>
+        </nav>
+      </div>
+      <a class="menu_item" onclick="logout()">Logout</a>
+    </header>
+    <main class="app_container">
+      <div class="page_wrapper">
+        <h1 class="order_heading">Users</h1>
+
+        <form class="filter_wrapper">
+          <input class="search_box" type="text" placeholder="Search by Name" />
+          <input class="reset_btn" type="submit" value="Reset" />
+        </form>
+
+        <div class="orders_wrapper">
+          <div class="order-table-wrapper">
+            <div class="order_table">
+              <div class="table-header">
+                <div><h4>ID</h4></div>
+                <div><h4>User Avatar</h4></div>
+                <div><h4>Full Name</h4></div>
+                <div><h4>DoB</h4></div>
+                <div><h4>Gender</h4></div>
+                <div><h4>Current Location</h4></div>
+              </div>
+              <div class="all-data-wrapper"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./users.js"></script>
+    <script src="./allData.js"></script>
+  </body>
+</html>

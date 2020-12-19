@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <title>Orders</title>
+  </head>
+  <body>
+    <header class="top_bar">
+      <div class="left_menu">
+        <div class="logo_wrapper">
+          <img
+            src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            alt="logo"
+          />
+          <p class="brand_name">Kafene</p>
+        </div>
+        <nav>
+          <a class="menu_item active" href="./orders.html">Orders</a>
+          <a class="menu_item" href="./products.html">Products</a>
+          <a class="menu_item" href="./users.html">Users</a>
+        </nav>
+      </div>
+      <a class="menu_item" onclick="logout()">Logout</a>
+    </header>
+    <main class="app_container">
+      <div class="page_wrapper">
+        <h1 class="order_heading">Orders</h1>
+        <div class="orders_wrapper">
+          <div class="filter_div">
+            <h3>Filters</h3>
+            <p>Count: <span id="count">100</span></p>
+            <label class="filter_checkbox">
+              <input
+                type="checkbox"
+                class="checks"
+                name="name"
+                value="new"
+                checked
+              />
+              New
+            </label>
+            <label class="filter_checkbox">
+              <input
+                type="checkbox"
+                class="checks"
+                name="name"
+                value="packed"
+                checked
+              />
+              Packed
+            </label>
+            <label class="filter_checkbox">
+              <input
+                type="checkbox"
+                class="checks"
+                name="name"
+                value="intransit"
+                checked
+              />
+              InTransit
+            </label>
+            <label class="filter_checkbox">
+              <input
+                type="checkbox"
+                class="checks"
+                name="name"
+                value="delivered"
+                checked
+              />
+              Delivered
+            </label>
+          </div>
+          <div class="order-table-wrapper">
+            <div class="order_table">
+              <div class="table-header">
+                <div><h4>ID</h4></div>
+                <div><h4>Customer</h4></div>
+                <div><h4>Date</h4></div>
+                <div><h4>Amount</h4></div>
+                <div><h4>Status</h4></div>
+              </div>
+              <div class="all-data-wrapper"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./orders.js"></script>
+    <script src="./allData.js"></script>
+  </body>
+</html>
